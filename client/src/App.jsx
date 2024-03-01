@@ -14,6 +14,8 @@ import JugueteriaView from './view/JugueteriaView';
 import MercadoView from './view/MercadoView';
 import NavidadView from './view/NavidadView';
 import TvView from './view/TvView';
+import Cart from './components/Cart';
+
 
 function App() {
   return (
@@ -32,6 +34,7 @@ function App() {
           <Route path="/mercado" element={<MercadoView />} />
           <Route path="/navidad" element={<NavidadView />} />
           <Route path="/televisores" element={<TvView />} />
+          <Route path="/cart" element={<Cart />} />
         </Routes>
         <Footer />
       </div>
