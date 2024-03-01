@@ -5,11 +5,16 @@ import sarten from '../imgProducts/sarten.jpeg';
 
 function CocinaView() {
     const [cart, setCart] = useState([]);
+    const [agg, setAgg] = useState(false);
 
     const addToCart = async (product) => {
         try {
             const response = await axios.post('http://localhost:4000/api/cart/createProduct', product);
             setCart([...cart, response.data]);
+            setAgg(true);
+            setTimeout(() => {
+                setAgg(false);
+            }, 3000);
         } catch (error) {
             console.error('Error adding to cart:', error);
         }
@@ -18,6 +23,8 @@ function CocinaView() {
     return (
         <div className='m-8'>
             <h1 className='text-xl mb-8'>Cocina</h1>
+            {agg && <p className='absolute right-20 top-32 bg-green-500 font-bold text-white
+      px-3 py-2 rounded-md'>Producto agregado al carrito</p>}
             <div className='flex gap-20'>
                 <div className='flex flex-col gap-3 w-60'>
                     <img src={termo} className='w-72 h-60' alt='' />

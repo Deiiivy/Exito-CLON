@@ -1,5 +1,6 @@
 const modelProduct = require('../models/productModel');
 
+
 const getAllProducts = async (req, res) => {
   try {
     const products = await modelProduct.find();
@@ -64,6 +65,15 @@ const deleteProduct = async (req, res) => {
     }
 };
 
+const deleteAll = async(req,res) => {
+    try {
+        await modelProduct.deleteMany()
+        res.json({message: "Success"})
+    } catch (error) {
+        res.status(500).json({ message: `Error: ${error}` });
+    }
+}
+
 
 
 module.exports = {
@@ -72,4 +82,5 @@ module.exports = {
   createProduct,
   updateProduct,
   deleteProduct,
+  deleteAll
 };
