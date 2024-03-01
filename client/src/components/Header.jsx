@@ -1,6 +1,7 @@
 import React from 'react';
 import 'boxicons';
 import logo from '../assets/logo.svg';
+import { Link } from 'react-router-dom';
 
 function Header() {
   return (
@@ -11,7 +12,7 @@ function Header() {
         </div>
         <div className='flex justify-between bg-[#FFEF00] px-4 py-2 items-center'>
             <div className='flex gap-6'>
-                <img src={logo} className='w-20' alt="" />
+                <Link to="/"><img src={logo} className='w-20' alt="" /></Link>
                 <div className='flex gap-4 cursor-pointer items-center'>
                 <box-icon name='menu'></box-icon>
                 <p className='font-bold'>Menú</p>
@@ -21,7 +22,7 @@ function Header() {
                 outline-none' />
                <box-icon name='search-alt-2' ></box-icon>
                 </div>
-                <box-icon name='map' ></box-icon>
+                <box-icon name='map'></box-icon>
                 <p className='font-semibold'>¿Como quieres recibir tu pedido? </p>
             </div>
             <div className='flex gap-8'>
