@@ -8,10 +8,9 @@ por categorías de productos, gestión de carrito de compras y proceso
 de pago seguro. El proyecto demostró mi capacidad para crear
 experiencias de usuario completas y funcionales en entornos web.
 
+![Alt text](client/src/images/image.png)
+
 ![Alt text](client/src/images/image-1.png)
-
-
-![Alt text](client/src/images/image-2.png)
 
 
 ![Alt text](client/src/images/image-3.png)
