@@ -40,6 +40,10 @@ function Cart() {
     const handleDeleteAll = async () => {
         try {
             await axios.delete('http://localhost:4000/api/cart/comprado')
+            setBuy(true)
+            setTimeout(()=> {
+                setBuy(false)
+            },3000)
         } catch (error) {
             console.log('error');
         }
@@ -60,6 +64,7 @@ function Cart() {
         <div className='m-8 border border-slate-600 px-3 py-7 rounded'>
             <h1 className='font-semibold mb-6'>Carrito de Compras</h1>
             {deleted && <p className='absolute right-20 top-40 bg-yellow-600 text-white font-bold rounded'>producto eliminado</p>}
+            {buy && <p className='absolute right-20 top-40 bg-green-600 text-white font-bold rounded'>Gracias por tu compra</p>}
             <div className='grid grid-cols-3 gap-5'>
                 {
                     cart.map((item) => (

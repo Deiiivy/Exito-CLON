@@ -30,7 +30,7 @@ function Header() {
         <header className='flex flex-col'>
             <div className='flex gap-4 h-10 justify-center bg-[#E8156B] py-2 text-white'>
                 <span className='text-lg'>Gana un bono de $29 mil por comprar $100 mil en mercado 🥑🥚</span>
-                <button className='bg-yellow-300 text-red-600 rounded text-xs px-2 hover:bg-white'>¡Compra ya!</button>
+                <Link to="/" ><button className='bg-yellow-300 text-red-600 rounded text-xs px-2 hover:bg-white'>¡Compra ya!</button></Link>
             </div>
             <div className='flex justify-between bg-[#FFEF00] px-4 py-2 items-center'>
                 <div className='flex gap-6'>
@@ -65,11 +65,11 @@ function Header() {
                     <box-icon name='map'></box-icon>
                     <p className='font-semibold'>¿Como quieres recibir tu pedido? </p>
                 </div>
-                <div className='flex gap-8'>
-                    <div className='flex flex-col items-center'>
-                        <box-icon name='user'></box-icon>
-                        <p>Mi cuenta</p>
-                    </div>
+                    <div className='flex gap-8'>
+                        <Link to='/register'><div className='flex flex-col items-center cursor-pointer'>
+                            <box-icon name='user'></box-icon>
+                            <p>Mi cuenta</p>
+                        </div></Link>   
                     <Link to="/cart">
                         <div className='flex flex-col items-center relative'>
                             <box-icon name='cart'></box-icon>

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import Header from './components/Header';
 import Home from './components/Home';
@@ -15,7 +15,8 @@ import MercadoView from './view/MercadoView';
 import NavidadView from './view/NavidadView';
 import TvView from './view/TvView';
 import Cart from './components/Cart';
-
+import Register from './components/Register';
+import Login from './components/Login';
 
 function App() {
   return (
@@ -23,6 +24,8 @@ function App() {
       <div>
         <Header />
         <Routes>
+          <Route path='/register' element={<Register />} />
+          <Route path='/login' element={<Login />} />
           <Route path="/" element={<Home />} />
           <Route path="/phones" element={<PhoneView />} />
           <Route path="/cocina" element={<CocinaView />} />
