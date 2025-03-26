@@ -26,6 +26,6 @@ npm start
 # 3. Ejecutar el Cliente
 cd ../client
 npm install
-npm start
+npm run dev
 
 
