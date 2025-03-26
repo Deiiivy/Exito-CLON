@@ -15,7 +15,7 @@ Sigue estos pasos para ejecutar el proyecto en tu máquina local:
 ```bash
 # 1. Clonar el repositorio
 git clone https://github.com/Deiiivy/Exito-CLON.git
-cd tu_repositorio
+cd Exito-CLON
 
 
 # 2. Ejecutar el Servidor
