@@ -9,6 +9,13 @@ Desarrollé un clon de la aplicación web Éxito, que permitirá a los usuarios 
 ![Alt text](client/src/images/image-3.png)
 
 ## Instalación y Ejecución del Proyecto
+Requisitos Previos
+
+Antes de ejecutar el proyecto, asegúrate de tener instalados los siguientes requisitos:
+
+Git: Para clonar el repositorio. Puedes descargarlo desde aqui.
+
+Node.js y npm: Asegúrate de tener instalada la última versión estable de Node.js, que incluye npm. Descárgalo desde aqui.
 
 Sigue estos pasos para ejecutar el proyecto en tu máquina local:
 
